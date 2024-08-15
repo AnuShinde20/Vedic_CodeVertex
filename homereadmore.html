@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MahaVastu for Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px 0;
+        }
+
+        .hero img {
+            width: 45%;
+            border-radius: 10px;
+        }
+
+        .hero-content {
+            width: 50%;
+        }
+
+        h1 {
+            color: #993333;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        ul li:before {
+            content: "•";
+            color: #ff7a00;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #ff7a00;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #e06b00;
+        }
+
+        .sections {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .section h3 {
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .form-container {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .form-container form {
+            display: inline-block;
+            text-align: left;
+            max-width: 600px;
+            width: 100%;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #ff7a00;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #e06b00;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .card p {
+            font-size: 1em;
+            margin: 0;
+        }
+
+        .rate {
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #993333;
+        }
+        .sections {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .section h3 {
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+
+        footer div {
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        footer h3 {
+            margin-bottom: 10px;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            margin-bottom: 5px;
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        footer .contact p, footer .copyright p {
+            margin: 5px 0;
+        }
+
+        footer .connect ul {
+            display: flex;
+            gap: 10px;
+        }
+
+        footer .connect ul li img {
+            width: 24px;
+            height: 24px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="VEDIC Logo">
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>MahaVastu for Home</h1>
+                <p>Specializing in internal structuring of homes without breaking or damaging the existing structure or interior design, MahaVastu offers remedies in three stages:</p>
+                <a href="#form-section" class="button">Get Advice</a>
+            </div>
+            <img src="houseimage.jpeg" alt="Modern House">
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>Level 1: Basic Balancing</h3>
+                <p>Balancing the five elements (water, air, fire, earth, and space) using colors to establish harmony in the house.</p>
+            </div>
+            <div class="card">
+                <h3>Level 2: Advanced Remedies</h3>
+                <p>Installing various elements such as paintings, struts, plates, metal strips, and pyramids to enhance specific Vastu zones based on family needs (e.g., finance, land acquisition, relationships, etc.).</p>
+            </div>
+            <div class="card">
+                <h3>Level 3: Astro Vastu Remedies</h3>
+                <p>Personalized remedies based on individual birth charts, including custom changes specific to each person (e.g., installing chandan wood in the north-west for sinus issues).</p>
+                <div class="rate">Rate: ₹11,000</div>
+            </div>
+        </div>
+        <div class="sections">
+            <div class="section">
+                <h3>Activity</h3>
+                <p>Drawing Room, Pooja Room, Bedroom, Kitchen, Dining Area, Study Room, Toilet, Bar Room, Store, etc.</p>
+            </div>
+            <div class="section">
+                <h3>Utility</h3>
+                <p>Safe, T.V., Computer, Camera, Heater, Generator, Inverter, Gas Stove, Refrigerator, A.C., etc.</p>
+            </div>
+            <div class="section">
+                <h3>Interior</h3>
+                <p>Flower vases, plants, wall art, sculptures, idols, lights, carpets, rugs, etc.</p>
+            </div>
+        </div>
+
+        <div id="form-section" class="form-container">
+            <h2>Send your details by filling in the form below.</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location (State, City)</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+                <div class="form-group">
+                    <label for="area">Covered Area (Sq ft)</label>
+                    <input type="text" id="area" name="area" required>
+                </div>
+                <div class="form-group">
+                    <label for="whatsapp">Whatsapp No</label>
+                    <input type="text" id="whatsapp" name="whatsapp" required>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Get Advice">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+<footer>
+    <div class="useful-links">
+        <h3>USEFUL LINKS</h3>
+        <ul>
+            <li><a href="#">PRIVACY POLICY</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">WHY VASTU SHASTRA</a></li>
+            <li><a href="#">VIDEOS</a></li>
+            <li><a href="#">MORE</a></li>
+        </ul>
+    </div>
+    <div class="main-links">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">TESTIMONIALS</a></li>
+        </ul>
+    </div>
+    <div class="contact">
+        <h3>CONTACT</h3>
+        <p>Palm Court Bldg M, 501/B, 5th Floor, New Link Road, Beside Goregaon Sports Complex, Malad West, Mumbai, 400064, Maharashtra</p>
+        <p>+91-8888888888</p>
+        <p><a href="mailto:websupport@justdial.com">websupport@justdial.com</a></p>
+    </div>
+    <div class="connect">
+        <h3>CONNECT</h3>
+        <ul>
+            <li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="linkedin.png" alt="LinkedIn"></a></li>
+            <li><a href="#"><img src="instagram.png" alt="Instagram"></a></li>
+            <li><a href="#"><img src="twitter.png" alt="Twitter"></a></li>
+        </ul>
+    </div>
+    <div class="copyright">
+        <p>&copy; Copyrights 2021 - 2022. Pearl Vastu Consultants. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
